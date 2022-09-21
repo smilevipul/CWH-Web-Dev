@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .container{
+            border: 2px solid pink;
+            background-color: rgb(200, 240, 227);
+            height: 2000px;
+        }
+        #box2{
+            position: relative; /*position relative to its normal position */
+            top: 40px;
+            left: 40px;
+        }
+        #box4{
+            
+            /* position: absolute; Position relative to its parent */
+           top: 40px;
+           left: 40px;
+            
+        }
+        #box3{
+
+            /* position of elements relative to browser window and fixed */
+
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px; */
+
+        }
+        #box5{
+            position: sticky;
+            top: 5px;
+        }
+        .box{
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">My Position is relative</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">My Postion is absolute</div>
+        <div class="box" id="box5">I'm Sticky</div>
+    </div>
+</body>
+</html>
