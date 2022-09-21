@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Fit With Smile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* css reset */
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Bhaina 2', cursive;
+        font-family: 'Bree Serif', serif;
+    }
+    body{
+        background-image: url(./img/bg.jpg);
+        color: white;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid pink ; */
+    }
+    .left img{
+        height: 50px;
+        width: 50px;
+        /* float: left; */
+        border-radius: 100%;
+        
+    }
+    .left div{
+        float: right;
+        text-align: center;
+        align-items: center;
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid pink ; */
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid pink ; */
+    }
+
+    .navbar li{
+        display: inline-block;
+    }
+
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+        font-size: 25px;
+        
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: darkcyan;
+        
+    }
+    .btn{
+        background-color: black;
+        color: aliceblue;
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: darkgray;
+    }
+
+</style>
+<body>
+
+    <header>
+        <div class="left">
+            <img src="./img/logo.png" alt="">
+            <div>Smile Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a class="active" href="#">Home</a> </li>
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Whatsapp Now</button>
+        </div>
+
+    </header>
+    
+</body>
+</html>
