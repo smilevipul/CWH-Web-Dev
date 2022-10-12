@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box And Txt Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            margin: 10px;
+            padding: 15px;
+            background-color: aqua;
+
+
+            /*______________________________- for outside box-shadow __________________________ */
+
+            /* sytax=> offset-x,offset-y, color; */
+            /* box-shadow: 10px 10px darkcyan; */
+
+            /* syntax:=> offset-x,offset-y, blur radius color; */
+            /* box-shadow: 10px 10px 10px darkcyan; */
+
+            /* syntax:=> offset-x ,offset-y, blur radius , spread radius,color?\; */
+            /* box-shadow: -10px -10px 10px darkcyan; */
+            /* box-shadow: 10px 10px 10px 5px  darkcyan; */
+            /* box-shadow: 10px 10px 10px 15px rgba(red, green, blue, 0.5); */
+
+
+            /*--------------------- for inside box-shadow-------------------------- */
+
+             box-shadow: inset 10px 10px 10px 5px  darkcyan;
+
+        }
+
+        .card h1{
+            color: aliceblue;
+            text-shadow: 3px 2px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is HTML Course</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus pariatur labore voluptas ad? Eaque, quibusdam eligendi. Laborum minima amet eum quae culpa nobis unde odit? Maiores tempora dolores molestiae doloribus.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>This is CSS Course</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi praesentium odit magnam sequi animi incidunt, ratione hic. Eveniet, obcaecati ab. Quia, itaque soluta optio et asperiores excepturi temporibus cupiditate ullam.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>This is Javascript Course</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reiciendis alias ut odit exercitationem repellendus sint, quos, iure hic soluta explicabo obcaecati molestias reprehenderit id laborum maxime harum provident voluptatum.
+        </div>
+    </div>
+</body>
+</html>

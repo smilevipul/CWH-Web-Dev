@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation And Keyframes</title>
+
+    <style>
+        .container{
+            height: 100vh;
+            background-color: grey;
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color:rgba(0, 128, 0, 0.561);
+            box-shadow: 10px 10px 10px green;
+
+            position: relative;
+
+            /* animation-name: vipul; */
+            animation-name: vipul1;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+
+
+            /*--------------------------- shorthand property for animation ----------------------------- */
+
+            /* animation: name , duration , timing fun , delay , iteration count , animation-fill mode ; */
+
+            /* animation: vipul 5s ease-in 1s 5 forwards; */
+
+        }
+
+        @keyframes vipul1 {
+            0%{
+                top: 0%;
+                left: 0%;
+            }
+            25%{
+                top: 10%;
+                left: 0%;
+            }
+            75%{
+                top: 10%;
+                left: 10%;
+            }
+            100%{
+                top: 0%;
+                height: 10%;
+            }
+        }
+
+        @keyframes vipul {
+           from{
+            width: 250px;
+            height: 250px;
+           } 
+
+           to{
+            width: 500px;
+            height: 500px;
+
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">I'm Box</div>
+    </div>
+</body>
+</html>
