@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeOut</title>
+</head>
+<body>
+    <h1>I'm Heading</h1>
+    <div>
+        <spna id="time"></spna>
+    </div>
+
+
+    <script>
+        function greet(name,byeText)
+        {
+            console.log("Good Morning"+ " " +name+" "+byeText);
+        }
+        // greet();
+
+        // setTimeout(greet,5000,"Vipul","Take Care");
+
+        // setTimeout(greet("Vipul","Take Care"),50000) // set timeOut not working if use function with parethesis
+
+        // clearTimeOut 
+
+        // let timeOut = setTimeout(greet,5000,"Vipul","take Care")
+        // console.log(timeOut);
+        // clearTimeout(1);
+
+        // setInterval(greet,1000)
+        // intervalId = setInterval(greet,1000)
+        // console.log(intervalId);
+
+        function displayTime()
+        {
+           let time = new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        
+        setInterval(displayTime,1000)
+      
+    </script>
+</body>
+</html>

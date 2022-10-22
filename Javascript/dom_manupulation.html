@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+    </div>
+    <div class="container" >
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+    </div>
+
+    <script>
+    //    let main = document.getElementById('main');
+    //     console.log(main)
+
+    //     main.innerHTML = "<li>Item</li>" //changing html by js
+
+    //     let conatiners = document.getElementsByClassName('container'); // accessing html by clssName
+    //     console.log(conatiners)
+
+        
+
+        // let sel = document.querySelector('.container'); // accessing html by css selector
+        // console.log("selector returns" ,sel)
+
+        // let sel = document.querySelector('#main>ul>li'); // accessing html by css selector
+        // console.log("selector returns" ,sel)
+
+
+        let sel = document.querySelectorAll('#main'); // accessing html by css selector
+        console.log("selector returns" ,sel)
+
+
+    </script>
+</body>
+</html>

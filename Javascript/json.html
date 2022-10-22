@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Json</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript Json</h1>
+    </div>
+
+    <script>
+        let jsonObj = {
+            name : "Vipul",
+            age : 20,
+            friend : "Abhishek",
+
+        }
+
+        console.log(jsonObj);       
+
+        let myJsonstr = JSON.stringify(jsonObj);  // converting object to stirng 
+        console.log(myJsonstr);
+
+        myJsonstr = myJsonstr.replace(20,21);
+        console.log(myJsonstr);      
+
+        newJsonObj = JSON.parse(myJsonstr); // converting string to object 
+        console.log(newJsonObj);
+
+    </script>
+</body>
+</html>

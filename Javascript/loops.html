@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // let friends = ["Abhishek" , "Shivam" , "Santosh", "Raja"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     const element = friends[index];
+        //     console.log("Hello " + element);
+        // }
+
+        // forEach function to iterate array elements
+
+        // friends.forEach(function fun(element){
+        //     console.log("Hello friend "+ element + " Modern Javascript");
+        // });
+
+        let employee = {
+            name : "Vipul",
+            age : 20,
+            salary : 100
+
+        }
+
+        //key in for iterate members of object
+
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+    </script>
+</body>
+</html>
