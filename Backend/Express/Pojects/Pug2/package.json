@@ -1,0 +1,15 @@
+{
+  "name": "smiledanceacadmy",
+  "version": "1.0.0",
+  "description": "Popular Dance Acadmy in this area",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vipul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}

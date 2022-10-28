@@ -1,0 +1,48 @@
+extends base.pug 
+
+block scripts
+    script(src="/static/index.js") 
+block style 
+    style
+        include ../static/style.css
+block content
+    body
+        #introSection 
+            h1 Welcome To Smile Dance Academy 
+            h2 Eat Dance Sleep Repeat
+
+        #ourMission
+            h1
+             u  Our Mission          
+            #row 
+             .card
+               h2 Dance Perfection
+               .card-box
+                  .card-img
+                     img(src="../static/ts3.png", alt="")
+                  .card-content
+                     p This is the best dance academy in the area
+             .card
+               h2 Dance The Way you Like
+               .card-box
+                  .card-img
+                     img(src="../static/ts3.png", alt="")
+                  .card-content
+                     p This is the best dance academy in the area
+             .card
+               h2 Expert Teaching
+               .card-box
+                  .card-img
+                     img(src="../static/ts3.png", alt="")
+                  .card-content
+                     p This is the best dance academy in the area
+        #sponsorsSection 
+            h1
+               u  Our Sponsors 
+            .spon             
+               .item 
+                img(src="../static/1024px-HP_logo_2012.svg.png", alt="")
+               .item 
+                img(src="../static/apple_logo_PNG19674.png", alt="")
+               .item 
+                img(src="../static/microsoft_PNG6.png", alt="")        
